@@ -5,7 +5,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetworkService {
     private static NetworkService mInstance;
-//    private static final String BASE_URL = "https://jsonplaceholder.typicode.com";
     private static final String BASE_URL = "http://10.0.2.2:8080";
     private Retrofit mRetrofit;
 
@@ -26,6 +25,4 @@ public class NetworkService {
     public JSONPlaceHolderApi getJSONApi() {
         return mRetrofit.create(JSONPlaceHolderApi.class);
     }
-
-
 }

@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ListView listView = findViewById(R.id.listSubjectView);
-//        ArrayList<Subject> subjects = new ArrayList<Subject>();
 
         NetworkService.getInstance()
                 .getJSONApi()
@@ -32,13 +31,8 @@ public class MainActivity extends AppCompatActivity {
                         ArrayList<Subject> subjects = response.body();
                         System.out.println("------------------------");
                         System.out.println(response.body());
-//                        String[] countries = { subject.getName(), subject.getFacultyName(), subject.getTeacherName()};
                         SubjectAdapter subjectAdapter = new SubjectAdapter(MainActivity.this, R.layout.layout_row_view, subjects);
-
                         listView.setAdapter(subjectAdapter);
-//                        textViewName.append(subject.getName());
-//                        textViewFacultyName.append(subject.getFacultyName());
-//                        textViewTeacherName.append(subject.getTeacherName());
                     }
 
                     @Override

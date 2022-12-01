@@ -29,15 +29,11 @@ public class SubjectAdapter  extends ArrayAdapter<Subject> {
         TextView textViewName = view.findViewById(R.id.textViewName);
         TextView textViewFacultyName = view.findViewById(R.id.textViewFacultyName);
         TextView textViewTeacherName = view.findViewById(R.id.textViewTeacherName);
-
         Subject subject = subjects.get(position);
-
         textViewName.setText(subject.getName());
         textViewFacultyName.setText(subject.getFacultyName());
         textViewTeacherName.setText(subject.getTeacherName());
 
         return view;
     }
-
-
 }
