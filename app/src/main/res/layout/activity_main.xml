@@ -8,12 +8,26 @@
 
     <ListView
         android:id="@+id/listSubjectView"
-        android:layout_width="367dp"
-        android:layout_height="619dp"
+        android:layout_width="370dp"
+        android:layout_height="640dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Список елементів"
+        android:textColor="#000000"
+        android:textSize="80px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/listSubjectView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.mybackend;
+package com.example.lab_3_round_3;
 
 import org.junit.Test;
 
