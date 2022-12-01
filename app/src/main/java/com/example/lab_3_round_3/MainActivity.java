@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(@NonNull Call<ArrayList<Subject>> call, @NonNull Response<ArrayList<Subject>> response) {
                         ArrayList<Subject> subjects = response.body();
-                        System.out.println("------------------------");
-                        System.out.println(response.body());
                         SubjectAdapter subjectAdapter = new SubjectAdapter(MainActivity.this, R.layout.layout_row_view, subjects);
                         listView.setAdapter(subjectAdapter);
                     }
